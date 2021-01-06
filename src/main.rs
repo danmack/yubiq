@@ -31,7 +31,6 @@ fn main() {
     println!("{:?}\n", my_yubi);
     println!("Binary Representation of the OTP is:");
     for (i, c) in hex_to_bin(&my_yubi.code).chars().enumerate() {
-        // println!("{:03} : {} => {}", i, c, i%20);
         if (i % 20) == 19 {
             println!("");
         } else {
